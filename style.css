@@ -56,6 +56,10 @@ body {
     padding: 0 1.5rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 .blog-preview-card {
     max-width: 384px;
 
@@ -107,7 +111,15 @@ body {
 .blog-preview-card__header {
     font-size: var(--fs-900);
     font-weight: var(--fw-bold);
+}
+
+.blog-preview-card__header a {
     color: var(--clr-gray-950);
+    transition: color 0.3s ease;
+}
+
+.blog-preview-card__header a:hover {
+    color: var(--clr-yellow);
 }
 
 .blog-preview-card__author-box {
