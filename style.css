@@ -1,0 +1,127 @@
+:root {
+    --clr-yellow: hsl(47, 88%, 63%);
+
+    --clr-white:hsl(0, 0%, 100%);
+
+    --clr-gray-500: hsl(0, 0%, 42%);
+    --clr-gray-950: hsl(0, 0%, 7%);
+
+    --fw-regular: 400;
+    --fw-bold: 800;
+
+    --fs-300: 0.875rem;
+    --fs-400: 1rem;
+    --fs-900: 1.5rem;
+}
+
+/* reset */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+img,
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+/* general styling */
+
+body {
+    font-family: "Figtree", sans-serif;
+    line-height: 1.5;
+    color: var(--clr-gray-500);
+
+    background-color: var(--clr-yellow);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 1.5rem;
+}
+
+.blog-preview-card {
+    max-width: 384px;
+
+    padding: 1.5rem;
+
+    background-color: var(--clr-white);
+
+    display: grid;
+    gap: 1.5rem;
+
+    border: 1px solid var(--clr-gray-950);
+    border-radius: 1.25rem;
+    box-shadow: 0.5rem 0.5rem var(--clr-gray-950);
+}
+
+.blog-preview-card__illusration-box {
+    display: flex;
+    justify-content: center;
+}
+
+.blog-preview-card__illustration {
+    border-radius: 0.625rem;
+}
+
+.blog-preview-card__text-box {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.blog-preview-card__category {
+    max-width: fit-content;
+
+    padding: 0.25rem 0.75rem;
+
+    font-size: var(--fs-300);
+    font-weight: var(--fw-bold);
+    color: var(--clr-gray-950);
+
+    background-color: var(--clr-yellow);
+
+    border-radius: 0.25rem;
+}
+
+.blog-preview-card__date {
+    font-size: var(--fs-300);
+    color: var(--clr-gray-950);
+}
+
+.blog-preview-card__header {
+    font-size: var(--fs-900);
+    font-weight: var(--fw-bold);
+    color: var(--clr-gray-950);
+}
+
+.blog-preview-card__author-box {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.blog-preview-card__avatar {
+    max-width: 2rem;
+}
+
+.blog-preview-card__author {
+    font-size: var(--fs-300);
+    font-weight: var(--fw-bold);
+    color: var(--clr-gray-950);
+}
